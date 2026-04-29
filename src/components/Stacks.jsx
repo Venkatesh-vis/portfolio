@@ -2,6 +2,7 @@ import ReactSvg from "./svgs/React";
 import express from "../assets/icons8-express-js-50.png";
 import node from "../assets/node-js-svgrepo-com.svg";
 import socket from "../assets/socket.png";
+import razorpay from "../assets/razorpay.png";
 import Redux from "./svgs/Redux";
 import TailwindCSS from "./svgs/Tailwind";
 import { motion } from "framer-motion";
@@ -46,6 +47,7 @@ const Stacks = () => {
     { name: "Tailwind CSS", component: <TailwindCSS /> },
     {name: "Node.js", component: (<img src={node} alt="Node" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
     {name: "Express", component: (<img src={express} alt="Express" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
+    {name: "Razorpay", component: (<img src={razorpay} alt="Express" className="w-20 sm:w-24 md:w-28 lg:w-50 h-auto"/>),},
     { name: "MongoDB", component: <MongoDB /> },
     {name: "Socket.IO", component: (<img src={socket} alt="Socket" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
     { name: "Git", component: <Git /> },
@@ -69,16 +71,13 @@ const Stacks = () => {
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
-            className="flex flex-wrap justify-center items-center"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 place-items-center"
         >
           {stacks.map((stack, index) => (
               <motion.div
                   key={index}
                   variants={itemVariants}
-                  whileHover={{
-                    scale: 1.2,
-                    rotate: 5,
-                  }}
+                  whileHover={{scale: 1.2, transition: { duration: 0.3 }}}
                   whileTap={{ scale: 0.95 }}
                   className="p-6 cursor-pointer"
               >
