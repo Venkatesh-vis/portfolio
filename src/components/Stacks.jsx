@@ -3,6 +3,8 @@ import express from "../assets/icons8-express-js-50.png";
 import node from "../assets/node-js-svgrepo-com.svg";
 import socket from "../assets/socket.png";
 import razorpay from "../assets/razorpay.png";
+import ts from "../assets/typescript.svg";
+import mysql from "../assets/mysql.svg";
 import Redux from "./svgs/Redux";
 import TailwindCSS from "./svgs/Tailwind";
 import { motion } from "framer-motion";
@@ -41,17 +43,19 @@ const Stacks = () => {
     { name: "HTML", component: <Html /> },
     { name: "CSS", component: <Css /> },
     { name: "JavaScript", component: <JavaScript /> },
+    {name: "TypeScript", component: (<img src={ts} alt="Node" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
     { name: "React", component: <ReactSvg /> },
     { name: "Redux", component: <Redux /> },
     { name: "Material UI", component: <MaterialUI /> },
     { name: "Tailwind CSS", component: <TailwindCSS /> },
     {name: "Node.js", component: (<img src={node} alt="Node" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
     {name: "Express", component: (<img src={express} alt="Express" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
-    {name: "Razorpay", component: (<img src={razorpay} alt="Express" className="w-20 sm:w-24 md:w-28 lg:w-50 h-auto"/>),},
     { name: "MongoDB", component: <MongoDB /> },
+    {name: "MySQL", component: (<img src={mysql} alt="Node" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
     {name: "Socket.IO", component: (<img src={socket} alt="Socket" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto"/>),},
     { name: "Git", component: <Git /> },
     { name: "Postman", component: <Postman /> },
+    {name: "Razorpay", component: (<img src={razorpay} alt="Express" className="w-20 sm:w-24 md:w-28 lg:w-50 h-auto"/>),},
   ];
 
   return (
