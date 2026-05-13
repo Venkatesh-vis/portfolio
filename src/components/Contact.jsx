@@ -39,7 +39,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          href="mailto:gopigskkumar@gmail.com"
+          href="mailto:venkateshvishwanadula257@gmail.com"
           className="flex flex-row items-center gap-2 justify-center"
         >
           <Gmail />
