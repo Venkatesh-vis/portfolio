@@ -19,37 +19,37 @@ export const EXPERIENCES = [
       {
         title: "Community Platform",
         description:
-            "Developed a public community forum where users can browse discussions without authentication. Implemented guarded actions for creating and editing threads, redirecting unauthenticated users to login and restoring navigation state post-authentication.",
+          "Built a public community forum where users can explore discussions without authentication. Implemented protected actions for creating and editing threads, with login redirection and automatic restoration of previous navigation state after authentication.",
         technologies: ["React.js", "Redux", "REST APIs"],
       },
       {
         title: "FAQ Management System",
         description:
-            "Built a dynamic FAQ module consuming admin-configured data, rendering platform-specific answers (Android, iOS, Web) with category-based organization on the homepage.",
+          "Developed a dynamic FAQ system powered by admin-managed content, supporting structured platform-specific sections (Web, iOS, Android) under each question, along with category-based organization for better content discoverability.",
         technologies: ["React.js", "Redux"],
       },
       {
         title: "Performance Optimization",
         description:
-            "Optimized rendering performance by minimizing unnecessary re-renders using memoization techniques. Maintained efficient data handling for large datasets using pagination, lazy loading, and debounced API calls.",
+          "Enhanced frontend performance by reducing unnecessary re-renders using memoization techniques. Improved rendering efficiency for large datasets using pagination, lazy loading, and debounced API requests.",
         technologies: ["React.js", "Memoization", "Debouncing"],
       },
       {
         title: "Multi-Tenant Platform (Subdomain System)",
         description:
-            "Developed a configurable multi-tenant UI system allowing businesses to create personalized subdomain pages with custom branding (themes, colors, images, content). Implemented multiple modules including lead capture (follow-ups), appointment booking, batch management, and customer lifecycle tracking with filtering and status management.",
+          "Designed and developed a multi-tenant architecture enabling businesses to create personalized subdomain pages with custom branding, including themes, colors, images, and content. Integrated modules for lead capture, appointment booking, batch management, and customer lifecycle tracking.",
         technologies: ["React.js"],
       },
       {
         title: "Workflow Modules (Business Operations)",
         description:
-            "Built interconnected modules for real-world workflows including follow-ups (lead tracking), appointments (date-based filtering), batch management (user enrollment), and customer management (active/inactive/pending states) driven by user actions from subdomain pages.",
+          "Built interconnected business workflows including lead follow-ups, appointment scheduling with date-based filtering, batch management for user enrollment, and customer management with status tracking (active, inactive, pending).",
         technologies: ["React.js", "REST APIs"],
       },
       {
         title: "File Upload Integration",
         description:
-            "Integrated secure file upload flows by coordinating with backend-controlled AWS upload mechanisms, improving data security and reducing frontend exposure to storage operations.",
+          "Integrated secure file upload system using backend-controlled AWS workflows, improving security by removing direct frontend upload access and ensuring safer media handling.",
         technologies: ["React.js", "AWS"],
       },
     ],
