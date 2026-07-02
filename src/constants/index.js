@@ -1,5 +1,6 @@
 import ride from "../assets/ride.png"
 import DisneyPlus from "../assets/disney.png";
+import aiApp from "../assets/ai_app.png";
 
 export const PROFILE_CONTENT = `MERN Stack Developer with hands-on experience building end-to-end web applications, covering API design, backend architecture, and dynamic frontend systems. 
 
@@ -58,11 +59,49 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "AI Learning Platform",
+    image: aiApp,
+    description:
+      "A full-stack AI-powered learning platform built using the MERN stack, enabling users to upload study documents and generate AI-powered summaries, quizzes, flashcards, and contextual chat using Google Gemini AI. Designed scalable REST APIs with JWT authentication, modular Controller-Service architecture, and efficient MongoDB schema design. Built an interactive quiz engine, flashcard learning system, dashboard analytics, and responsive UI following a feature-based architecture with Redux Toolkit and TypeScript.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Google Gemini AI",
+      "JWT",
+      "Axios",
+      "REST APIs",
+    ],
+    webUrl: "https://ai-learning-assistant-peach.vercel.app/",
+    companyUrl: "",
+    androidUrl: "",
+    iosUrl: "",
+    projectName: "",
+    isMobileApp: false,
+    isReleased: true,
+  },
+  {
     title: "Real time Ride Hailing",
     image: ride,
     description:
-       "A full-stack Uber-style ride-hailing platform built using the MERN stack, implementing real-time ride lifecycle management with WebSockets for live status updates. Developed dynamic location tracking and synchronized UI state between user and captain. Designed scalable REST APIs with JWT-based authentication and secure payment integration using Razorpay with signature verification. Focused on maintaining consistent state transitions, efficient data flow, and responsive UI across the application.",
-    technologies: ["React", "Redux", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Socket.IO", "JWT", "Razorpay", "REST APIs"],
+      "A full-stack Uber-style ride-hailing platform built using the MERN stack, implementing real-time ride lifecycle management with WebSockets for live status updates. Developed dynamic location tracking and synchronized UI state between user and captain. Designed scalable REST APIs with JWT-based authentication and secure payment integration using Razorpay with signature verification. Focused on maintaining consistent state transitions, efficient data flow, and responsive UI across the application.",
+    technologies: [
+      "React",
+      "Redux",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "JWT",
+      "Razorpay",
+      "REST APIs",
+    ],
     webUrl: "https://uber-three-pi.vercel.app/",
     companyUrl: "",
     androidUrl: "",
@@ -76,7 +115,12 @@ export const PROJECTS = [
     image: DisneyPlus,
     description:
       "Built a Disney Plus clone as a self-learning project to explore modern web technologies. Integrated Firebase for authentication and hosting, used Styled Components for dynamic UI styling, and leveraged Redux Toolkit for efficient state management.",
-    technologies: ["React", "Redux", "Styled Components", "Firebase"],
+    technologies: [
+      "React",
+      "Redux",
+      "Styled Components",
+      "Firebase",
+    ],
     webUrl: "https://disney-hotstar-eta.vercel.app/",
     companyUrl: "",
     androidUrl: "",
