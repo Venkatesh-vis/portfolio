@@ -1,6 +1,6 @@
 import ride from "../assets/ride.png"
 import DisneyPlus from "../assets/disney.png";
-import aiApp from "../assets/ai.png";
+import aiApp from "../assets/ailp.png";
 
 export const PROFILE_CONTENT = `MERN Stack Developer with hands-on experience building end-to-end web applications, covering API design, backend architecture, and dynamic frontend systems. 
 
