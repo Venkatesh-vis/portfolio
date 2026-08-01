@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 import Android from "./svgs/Android";
 import Apple from "./svgs/Apple";
 import Web from "./svgs/Web";
-import {useState} from "react";
+import { useState } from "react";
 
 const Projects = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-    const openImage = (img) => {
-        setSelectedImage(img);
-    };
+  const openImage = (img) => {
+    setSelectedImage(img);
+  };
 
-    const closeImage = () => {
-        setSelectedImage(null);
-    };
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
   return (
     <div className="pb-4">
       <motion.h2
@@ -126,26 +126,43 @@ const Projects = () => {
           </div>
         ))}
       </div>
-        {selectedImage && (
-            <div
-                className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
-                onClick={closeImage}
-            >
-                <button
-                    className="absolute cursor-pointer top-5 right-5 text-white text-3xl font-bold"
-                    onClick={closeImage}
-                >
-                    ×
-                </button>
+      {selectedImage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/90 backdrop-blur-sm"
+          onClick={closeImage}
+        >
+          <button
+            onClick={closeImage}
+            className="absolute cursor-pointer right-1 top-1 z-50 h-12 w-12 rounded-full bg-white/10 text-3xl text-white transition hover:bg-white/20"
+          >
+            ×
+          </button>
 
-                <img
-                    src={selectedImage}
-                    alt="Full View"
-                    className="max-w-[95%] max-h-[90vh] object-contain rounded"
-                    onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
-                />
-            </div>
-        )}
+          <motion.img
+            src={selectedImage}
+            alt="Project Preview"
+            onClick={(e) => e.stopPropagation()}
+            initial={{
+              scale: 0.9,
+              opacity: 0,
+            }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 120,
+              damping: 18,
+            }}
+            className="max-w-[95vw] max-h-[90vh] rounded-2xl object-contain shadow-2xl"
+          />
+        </motion.div>
+      )}
     </div>
   );
 };

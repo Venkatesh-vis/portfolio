@@ -2,6 +2,7 @@ import ride from "../assets/ride.png"
 import DisneyPlus from "../assets/disney.png";
 import aiApp from "../assets/ailp.png";
 
+
 export const PROFILE_CONTENT = `MERN Stack Developer with hands-on experience building end-to-end web applications, covering API design, backend architecture, and dynamic frontend systems. 
 
 Developed scalable backend services using Node.js and Express, including REST API design, authentication flows with JWT, and structured data management with MongoDB. Built real-world features such as community platforms, multi-tenant subdomain systems, and business workflow modules including appointments, follow-ups, and customer management. 
@@ -13,8 +14,8 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "10/2024 - 10/2025",
-    role: "React Developer",
+    year: "10/2024 - Present",
+    role: "Software Engineer",
     company: "SurveyHeart",
     tasks: [
       {
